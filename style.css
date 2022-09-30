@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     
+}
+h1{
+    font-size: 3em;
+    color: rgb(65, 33, 33);
+    letter-spacing: 2px;
+    position: relative;
+    width: 200px;
+    margin-left: 5%;
+    margin-top: 50%;
+}
+h1::after{
+    color: red;
+    content: "Maryam";
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    animation-name: h1-name;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    border-right: 1px solid red;
+}
+@keyframes h1-name {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 250px;
+    }
+}
